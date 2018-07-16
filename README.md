@@ -9,7 +9,7 @@ A simplified EventBus wrapper on top of Kotlin and Rx
 
 | Methods                           | Usage                                                   |
 | -                                 | -                                                       |
-| subscribe<Event>(subscriber)      | Register type object as an observer                     |
+| subscribe`<Event>`(subscriber)      | Register type object as an observer                     |
 | post(event: Any)                  | Passing event class to be ommitted on the observer      |
 | unsubscribe(subscriber: Any)      | Removes registered observers from the disposables       |
 
