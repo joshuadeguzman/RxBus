@@ -76,7 +76,7 @@ override fun onCreate(savedInstanceState: Bundle?) {
     setContentView(R.layout.main_fragment)
     
     bt_send_data.setOnClickListener {
-        rxbus.post(ShowDataEvent("Hi, this is from Fragment.kt")
+        rxbus.post(ShowDataEvent("Hi, this is from Fragment.kt"))
     }
 }
 ```
