@@ -5,7 +5,7 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.xrojan.library.rxbus
+import com.xrojan.library.RxBus
 import com.xrojan.rxbus.R
 import com.xrojan.rxbus.events.UpdateFragmentBottomLabel
 import com.xrojan.rxbus.events.UpdateFragmentTopLabel
@@ -26,17 +26,17 @@ class FragmentTop : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         // Init subscription
-        rxbus.subscribe<UpdateFragmentTopLabel>(this) {
+        RxBus.subscribe<UpdateFragmentTopLabel>(this) {
             tv_main.text = it.string
         }
 
         // Init listeners
         bt_post_main.setOnClickListener {
-            rxbus.post(UpdateMainActivityLabel("From FragmentTop: Hello!"))
+            RxBus.post(UpdateMainActivityLabel("From FragmentTop: Hello!"))
         }
 
         bt_post_bottom.setOnClickListener {
-            rxbus.post(UpdateFragmentBottomLabel("From FragmentTop: Hello!"))
+            RxBus.post(UpdateFragmentBottomLabel("From FragmentTop: Hello!"))
         }
     }
 
@@ -45,6 +45,6 @@ class FragmentTop : Fragment() {
      */
     override fun onDestroy() {
         super.onDestroy()
-        rxbus.unsubscribe(this)
+        RxBus.unsubscribe(this)
     }
 }

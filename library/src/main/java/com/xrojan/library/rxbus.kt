@@ -7,7 +7,7 @@ import io.reactivex.subjects.PublishSubject
  * Created by Joshua de Guzman on 16/07/2018.
  */
 
-object rxbus {
+object RxBus {
 
     val subject = PublishSubject.create<Any>()
     val disposables = mutableMapOf<Any, CompositeDisposable>()

@@ -3,7 +3,7 @@ package com.xrojan.rxbus
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
-import com.xrojan.library.rxbus
+import com.xrojan.library.RxBus
 import com.xrojan.rxbus.events.UpdateFragmentBottomLabel
 import com.xrojan.rxbus.events.UpdateFragmentTopLabel
 import com.xrojan.rxbus.events.UpdateMainActivityLabel
@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.main_activity)
 
         // Initialize subscriptions
-        rxbus.subscribe<UpdateMainActivityLabel>(this) {
+        RxBus.subscribe<UpdateMainActivityLabel>(this) {
             tv_main.text = it.string
         }
 
@@ -34,11 +34,11 @@ class MainActivity : AppCompatActivity() {
 
         // Init button listeners
         bt_post_top.setOnClickListener {
-            rxbus.post(UpdateFragmentTopLabel("From MainActivity: Hello!"))
+            RxBus.post(UpdateFragmentTopLabel("From MainActivity: Hello!"))
         }
 
         bt_post_bottom.setOnClickListener {
-            rxbus.post(UpdateFragmentBottomLabel("From MainActivity: Hello!"))
+            RxBus.post(UpdateFragmentBottomLabel("From MainActivity: Hello!"))
         }
     }
 
@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
      */
     override fun onDestroy() {
         super.onDestroy()
-        rxbus.unsubscribe(this)
+        RxBus.unsubscribe(this)
     }
 
     /**
