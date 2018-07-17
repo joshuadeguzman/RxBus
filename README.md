@@ -20,7 +20,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.joshuadeguzman:rxbus:v0.0.2'
+    implementation 'com.github.joshuadeguzman:rxbus:v0.0.3'
 }
 ```
 
