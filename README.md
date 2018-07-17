@@ -20,14 +20,14 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.joshuadeguzman:rxbus:v0.0.1'
+    implementation 'com.github.joshuadeguzman:rxbus:v0.0.2'
 }
 ```
 
 ### Create Events
 ```kotlin
 // Events.kt
-// Define your event subscription here
+// Define your events here
 
 // Passing data
 data class ShowDataEvent(val data: String)
@@ -46,11 +46,11 @@ override fun onCreate(savedInstanceState: Bundle?) {
     setContentView(R.layout.main_activity)
     
     // Register observers
-    rxbus.subscribe<ShowDataEvent>(this) {
+    RxBus.subscribe<ShowDataEvent>(this) {
         Log.e(tag, it.data)
     }
 
-    rxbus.subscribe<NoDataEvent>(this) {
+    RxBus.subscribe<NoDataEvent>(this) {
         callSomeMethod()
     }
 }
@@ -58,12 +58,12 @@ override fun onCreate(savedInstanceState: Bundle?) {
 // Remove subscriptions
 override fun onStop() {
     super.onStop()
-    rxbus.unsubscribe(this)
+    RxBus.unsubscribe(this)
 }
 
 override fun onDestroy() {
     super.onDestroy()
-    rxbus.unsubscribe(this)
+    RxBus.unsubscribe(this)
 }
 ```
 
@@ -76,7 +76,7 @@ override fun onCreate(savedInstanceState: Bundle?) {
     setContentView(R.layout.main_fragment)
     
     bt_send_data.setOnClickListener {
-        rxbus.post(ShowDataEvent("Hi, this is from Fragment.kt"))
+        RxBus.post(ShowDataEvent("Hi, this is from Fragment.kt"))
     }
 }
 ```
