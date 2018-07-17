@@ -1,4 +1,4 @@
-# rxbus
+# RxBus
 A simplified EventBus wrapper on top of Kotlin and Rx
 
 [![Release](https://jitpack.io/v/joshuadeguzman/rxbus.svg)](https://jitpack.io/#joshuadeguzman/rxbus)
@@ -20,7 +20,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.joshuadeguzman:rxbus:v0.0.3'
+    implementation 'com.github.joshuadeguzman:rxbus:v1.x.y'
 }
 ```
 
