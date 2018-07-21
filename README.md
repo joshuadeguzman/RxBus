@@ -20,7 +20,8 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.joshuadeguzman:rxbus:v1.x.y'
+    // Replace version with release version, e.g. 1.0.0-alpha, -SNAPSHOT
+    implementation 'io.jmdg:rxbus:[VERSION]'
 }
 ```
 
