@@ -1,9 +1,11 @@
 # RxBus
 A simplified EventBus wrapper on top of Kotlin and Rx
 
-[![Release](https://jitpack.io/v/joshuadeguzman/rxbus.svg)](https://jitpack.io/#joshuadeguzman/rxbus)
-
-
+[![Kotlin](https://img.shields.io/badge/Kotlin-1.2.51-green.svg?style=flat-square)](http://kotlinlang.org)
+[![RxJava](https://img.shields.io/badge/Support-27.1.1-6ab344.svg?style=flat-square)](https://github.com/ReactiveX/RxJava/releases/tag/v2.1.10)
+[![Build Status](https://img.shields.io/travis/joshuadeguzman/rxbus.svg?style=flat-square)](https://travis-ci.org/joshuadeguzman/rxbus)
+[![GitHub (pre-)release](https://img.shields.io/github/release/joshuadeguzman/rxbus/all.svg?style=flat-square)
+](./../../releases)
 
 ### Features
 
