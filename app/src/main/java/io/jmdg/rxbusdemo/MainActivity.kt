@@ -1,14 +1,15 @@
-package com.xrojan.rxbusdemo
+package io.jmdg.rxbusdemo
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
-import com.xrojan.rxbus.RxBus
-import com.xrojan.rxbusdemo.events.UpdateFragmentBottomLabel
-import com.xrojan.rxbusdemo.events.UpdateFragmentTopLabel
-import com.xrojan.rxbusdemo.events.UpdateMainActivityLabel
-import com.xrojan.rxbusdemo.fragments.FragmentBottom
-import com.xrojan.rxbusdemo.fragments.FragmentTop
+import com.xrojan.rxbusdemo.R
+import io.jmdg.rxbus.RxBus
+import io.jmdg.rxbusdemo.events.UpdateFragmentBottomLabel
+import io.jmdg.rxbusdemo.events.UpdateFragmentTopLabel
+import io.jmdg.rxbusdemo.events.UpdateMainActivityLabel
+import io.jmdg.rxbusdemo.fragments.FragmentBottom
+import io.jmdg.rxbusdemo.fragments.FragmentTop
 import kotlinx.android.synthetic.main.main_activity.*
 
 /**

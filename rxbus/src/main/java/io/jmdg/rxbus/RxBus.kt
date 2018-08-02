@@ -1,4 +1,4 @@
-package com.xrojan.rxbus
+package io.jmdg.rxbus
 
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.subjects.PublishSubject

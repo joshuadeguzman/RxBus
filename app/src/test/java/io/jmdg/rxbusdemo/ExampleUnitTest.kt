@@ -1,4 +1,4 @@
-package com.xrojan.rxbusdemo
+package io.jmdg.rxbusdemo
 
 import org.junit.Test
 

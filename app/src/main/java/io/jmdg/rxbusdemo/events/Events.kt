@@ -1,4 +1,4 @@
-package com.xrojan.rxbusdemo.events
+package io.jmdg.rxbusdemo.events
 
 /**
  * Created by Joshua de Guzman on 16/07/2018.

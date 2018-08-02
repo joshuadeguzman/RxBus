@@ -1,4 +1,4 @@
-package com.xrojan.rxbus;
+package io.jmdg.rxbus;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

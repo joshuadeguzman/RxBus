@@ -1,15 +1,15 @@
-package com.xrojan.rxbusdemo.fragments
+package io.jmdg.rxbusdemo.fragments
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.xrojan.rxbus.RxBus
+import io.jmdg.rxbus.RxBus
 import com.xrojan.rxbusdemo.R
-import com.xrojan.rxbusdemo.events.UpdateFragmentBottomLabel
-import com.xrojan.rxbusdemo.events.UpdateFragmentTopLabel
-import com.xrojan.rxbusdemo.events.UpdateMainActivityLabel
+import io.jmdg.rxbusdemo.events.UpdateFragmentBottomLabel
+import io.jmdg.rxbusdemo.events.UpdateFragmentTopLabel
+import io.jmdg.rxbusdemo.events.UpdateMainActivityLabel
 import kotlinx.android.synthetic.main.bottom_fragment.*
 
 /**

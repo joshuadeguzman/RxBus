@@ -1,4 +1,4 @@
-package com.xrojan.rxbusdemo
+package io.jmdg.rxbusdemo
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
