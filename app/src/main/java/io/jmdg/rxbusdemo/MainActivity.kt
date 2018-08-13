@@ -3,7 +3,6 @@ package io.jmdg.rxbusdemo
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
-import com.xrojan.rxbusdemo.R
 import io.jmdg.rxbus.RxBus
 import io.jmdg.rxbusdemo.events.UpdateFragmentBottomLabel
 import io.jmdg.rxbusdemo.events.UpdateFragmentTopLabel

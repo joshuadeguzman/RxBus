@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import io.jmdg.rxbus.RxBus
-import com.xrojan.rxbusdemo.R
+import io.jmdg.rxbusdemo.R
 import io.jmdg.rxbusdemo.events.UpdateFragmentBottomLabel
 import io.jmdg.rxbusdemo.events.UpdateFragmentTopLabel
 import io.jmdg.rxbusdemo.events.UpdateMainActivityLabel

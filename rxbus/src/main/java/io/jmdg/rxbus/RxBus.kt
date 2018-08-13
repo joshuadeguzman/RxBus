@@ -1,5 +1,7 @@
 package io.jmdg.rxbus
 
+import android.os.Handler
+import io.reactivex.Observable
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.subjects.PublishSubject
 
@@ -24,11 +26,29 @@ object RxBus {
     }
 
     /**
-     * @param subscriber - registered observer
+     * @param subscriber - remove observer
      */
     fun unsubscribe(subscriber: Any) {
         disposables[subscriber]?.clear()
         disposables.remove(subscriber)
+    }
+
+    /**
+     * @param subscriber - remove observer with exit callback
+     */
+    fun unsubscribe(subscriber: Any, callback: () -> Unit) {
+        disposables[subscriber]?.clear()
+        disposables.remove(subscriber)
+        callback()
+    }
+
+    /**
+     * @param subscriber - remove observer with exit callback
+     */
+    fun unsubscribe(subscriber: Any, callback: () -> Unit, delay: Long) {
+        disposables[subscriber]?.clear()
+        disposables.remove(subscriber)
+        Handler().postDelayed(callback, delay)
     }
 
     /**
