@@ -1,5 +1,5 @@
 # RxBus
-A simplified EventBus wrapper on top of Kotlin and Rx
+A simplified event-driven library on top of Kotlin and Rx
 
 [![Kotlin](https://img.shields.io/badge/Kotlin-1.2.51-green.svg?style=flat-square)](http://kotlinlang.org)
 [![RxJava](https://img.shields.io/badge/Support-27.1.1-6ab344.svg?style=flat-square)](https://github.com/ReactiveX/RxJava/releases/tag/v2.1.10)
