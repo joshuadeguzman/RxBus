@@ -10,7 +10,7 @@ import io.reactivex.subjects.PublishSubject
  */
 
 object RxBus {
-
+    // subject should be dynamic (BehaviorSubject, ReplaySubject , etc...)
     val subject = PublishSubject.create<Any>()
     val disposables = mutableMapOf<Any, CompositeDisposable>()
 
@@ -54,5 +54,6 @@ object RxBus {
     /**
      * @param item - event emitted by the observer
      */
+     // send event in diff consumer ex: post(channel="channel name", event=Event(value))
     fun post(item: Any) = subject.onNext(item)
 }
